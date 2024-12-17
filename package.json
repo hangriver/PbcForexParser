@@ -1,0 +1,25 @@
+{
+  "name": "pbc-forex-parser",
+  "version": "1.0.0",
+  "description": "用于获取和解析中国人民银行公示的汇率信息，并转换为 外汇/人民币 = %.4d 形式",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangriver/PbcForexParser.git"
+  },
+  "author": "Liu Hangjiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hangriver/PbcForexParser/issues"
+  },
+  "homepage": "https://github.com/hangriver/PbcForexParser#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "express": "^4.21.2"
+  }
+}
