@@ -12,7 +12,7 @@ export const getPbcRates = async (PbcUrl) => {
     //Get article content
     await page.waitForSelector("#zoom")
     const article = await page.$eval('#zoom',(element) => element.textContent.trim());
-    console.log(article);
+    console.log("Fetched PBC article: ", article);
     
     await browser.close();
 
@@ -89,7 +89,7 @@ const extractRates = (article) => {
   }
 
 
-  //console.log(results);
+  console.log("Parsed PBC article: ", results);
 
   return results;
 };

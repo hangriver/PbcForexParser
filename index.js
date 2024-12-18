@@ -10,6 +10,7 @@ app.use(express.json()); // 解析JSON请求体
 app.post('/getPbcRates', async (req, res) => {
   try {
     const requestData = req.body;
+    console.log("Received request on getPbcRates by POST with params:", requestData)
     const result = await getPbcRates(requestData.url);
     res.json(result); // 返回JSON格式的回调数据
   } catch (error) {
